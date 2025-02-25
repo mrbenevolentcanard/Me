@@ -1,0 +1,25 @@
+#hero-container {
+	width: 100vw;
+	height: 30vh;
+	/*padding-top: 39.6vh;
+	padding-bottom: calc(44.6vh - var(--header-top-dist) - var(--header-pad) - 2.5rem);*/
+	height: calc(55vh - 3px);
+	background-color: var(--c-secondary);
+	flex-direction: column;
+}
+
+#hero-title {
+	font-size: 3.5rem;
+	font-weight: 700;
+	padding-bottom: 2vh;
+}
+
+#hero-p {
+	font-size: 1.35rem;
+	font-weight: 400;
+}
+
+.hero-text {
+	color: var(--c-inv-text);
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}

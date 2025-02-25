@@ -1,0 +1,31 @@
+/* Flexbox Utilities */
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.flex-center {
+	justify-content: center;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+
+/* Positioning Utilities */
+.absolute-center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.position-relative {
+	position: relative;
+}
+
+
+/* Transition Utilities */
+.transition-all {
+	transition: all 0.3s ease;
+}

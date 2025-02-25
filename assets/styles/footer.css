@@ -1,0 +1,20 @@
+footer {
+	background-color: var(--c-surface);
+	height: 25vh;
+	justify-content: space-around;
+	font-size: 1.1rem;
+}
+
+#footer-right {
+	flex-direction: column;
+}
+
+#footer-right a {
+	margin: 1rem 0;
+	text-decoration: none;
+	color: var(--c-text);
+}
+
+#footer-right a:hover {
+	color: var(--c-primary);
+}
