@@ -1,4 +1,5 @@
 :root {
+	/* Header Variables */
 	--header-height: 3.5rem;
 	--header-top-dist: calc(1rem / 1.5);
 	--header-pad: 20px;
@@ -27,6 +28,20 @@
 	--cd-inv-text: #1A1A1A;
 	--cd-error: #FF5252;
 	--cd-success: #66BB6A;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --c-primary: var(--cd-primary);
+        --c-secondary: var(--cd-secondary);
+        --c-accent: var(--cd-accent);
+        --c-background: var(--cd-background);
+        --c-surface: var(--cd-surface);
+        --c-text: var(--cd-text);
+        --c-inv-text: var(--cd-inv-text);
+        --c-error: var(--cd-error);
+        --c-success: var(--cd-success);
+    }
 }
 
 * {

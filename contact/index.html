@@ -12,16 +12,27 @@
 		<link rel="stylesheet" href="../assets/styles/about-me-hero.css">
 		<link rel="stylesheet" href="../assets/styles/footer.css">
 		<link rel="stylesheet" href="../assets/styles/about-me-main.css">
+		<link rel="icon" type="image/png" href="../assets/media/pictures/avatar.png">
 	</head>
 	<body>
 		<div id="header-container" class="flex flex-center">
 			<header class="flex flex-between position-relative">
-				<a class="header-links transition-all" href="../about-me">About me</a>
-				<a id="header-avatar-parent" class="flex flex-center absolute-center" href="../">
-					<img id="header-avatar" class="transition-all" src="../Assets/Media/Pictures/avatar.png" alt="Avatar">
-				</a>
-				<a class="header-links transition-all" href="../contact">Contact</a>
-			</header>
+  <div class="header-left">
+    <a class="header-links transition-all" href="../about-me">About me</a>
+    <p class="header-links">|</p>
+    <a class="header-links transition-all" href="https://github.com/mrbenevolentcanard" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+  <div class="header-center">
+    <a id="header-avatar-parent" class="flex flex-center" href="../">
+      <img id="header-avatar" class="transition-all" src="../assets/media/pictures/avatar.png" alt="Avatar">
+    </a>
+  </div>
+  <div class="header-right">
+    <a class="header-links transition-all" href="../my-projects">My projects</a>
+    <p class="header-links">|</p>
+    <a class="header-links transition-all" href="../contact">Contact</a>
+  </div>
+</header>
 		</div>
 		<div id="hero-container" class="flex flex-center">
 			<div>
