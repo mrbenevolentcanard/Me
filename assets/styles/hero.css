@@ -1,11 +1,42 @@
 #hero-container {
 	width: 100vw;
-	height: 30vh;
-	/*padding-top: 39.6vh;
-	padding-bottom: calc(44.6vh - var(--header-top-dist) - var(--header-pad) - 2.5rem);*/
 	height: 74.5vh;
 	background-color: var(--c-secondary);
 	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-blob {
+	position: absolute;
+	z-index: 0;
+	filter: blur(8px) brightness(1.1);
+	pointer-events: none;
+	opacity: 0.7;
+	animation: blobFloat 12s ease-in-out infinite alternate;
+}
+.hero-blob1 {
+	top: -80px;
+	left: -120px;
+	width: 420px;
+	height: 420px;
+	animation-delay: 0s;
+}
+.hero-blob2 {
+	bottom: 0px;
+	right: 0px;
+	width: 320px;
+	height: 320px;
+	animation-delay: 2s;
+}
+@keyframes blobFloat {
+	0% { transform: scale(1) translateY(0); }
+	100% { transform: scale(1.08) translateY(-20px); }
+}
+
+#hero-container > div {
+	position: relative;
+	z-index: 1;
 }
 
 #hero-title {
@@ -14,14 +45,35 @@
 	padding-bottom: 2vh;
 }
 
+#hero-subtitle {
+	font-size: 1.35rem;
+	font-weight: 425;
+}
+
 #hero-p {
+	margin-top: 1.5rem;
 	font-size: 1.35rem;
 	font-weight: 400;
+	color: var(--c-text);
+	padding: 1.5rem 2.5rem;
+	border-radius: 1.2rem;
+	background: rgba(255,255,255,0.18);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+	backdrop-filter: blur(8px) saturate(1.2);
+	border: 1.5px solid rgba(255,255,255,0.25);
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: box-shadow 0.3s, background 0.3s;
+}
+#hero-p:hover {
+	box-shadow: 0 12px 36px 0 rgba(31, 38, 135, 0.22);
+	background: rgba(255,255,255,0.28);
 }
 
 .hero-text {
 	color: var(--c-inv-text);
-	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .hero-button {
@@ -31,11 +83,15 @@
 	font-size: 1.25rem;
 	border-radius: 0.5rem;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 
 .hero-button:hover {
-	background-image: linear-gradient(to bottom right, var(--c-accent), var(--c-dark-accent));
-	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+	background-image: linear-gradient(to bottom right, var(--c-primary), var(--c-accent));
+	box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.5);
+	transform: scale(1.05);
 }
 
 .hero-buttons-row {

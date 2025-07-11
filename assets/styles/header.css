@@ -72,10 +72,10 @@ header {
 	border-radius: 50%;
 	width: calc(var(--header-height) * 0.9);
 	cursor: pointer;
-	border: 1px solid #000;
+	border: 2px solid #000;
 }
 
 #header-avatar:hover {
 	transform: scale(1.2);
-	border-color: var(--c-primary);
+	border: 2px solid var(--c-primary);
 }

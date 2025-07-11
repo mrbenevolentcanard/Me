@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/styles/hero.css">
 		<link rel="stylesheet" href="assets/styles/footer.css">
 		<link rel="stylesheet" href="assets/styles/home-main.css">
-		<link rel="icon" type="image/png" href="../assets/media/pictures/avatar.png">
+		<link rel="icon" type="image/png" href="assets/media/pictures/avatar.png">
 	</head>
 	<body>
 		<div id="header-container" class="flex flex-center">
@@ -24,7 +24,7 @@
 				</div>
 				<div class="header-center">
 					<a id="header-avatar-parent" class="flex flex-center" href="../">
-						<img id="header-avatar" class="transition-all" src="../assets/media/pictures/avatar.png" alt="Avatar">
+						<img id="header-avatar" class="transition-all" src="assets/media/pictures/avatar.png" alt="Avatar">
 					</a>
 				</div>
 				<div class="header-right">
@@ -35,23 +35,57 @@
 			</header>
 		</div>
 		<div id="hero-container" class="flex flex-center">
+			<!-- Animated SVG Blobs -->
+			<svg class="hero-blob hero-blob1" viewBox="0 0 400 400" width="400" height="400" fill="none" xmlns="http://www.w3.org/2000/svg">
+			  <defs>
+				<linearGradient id="blobGradient1" x1="0" y1="0" x2="1" y2="1">
+				  <stop offset="0%" stop-color="#4F8CFF" />
+				  <stop offset="100%" stop-color="#A259F7" />
+				</linearGradient>
+			  </defs>
+			  <path fill="url(#blobGradient1)">
+				<animate attributeName="d" dur="8s" repeatCount="indefinite"
+				  values="M320,200Q320,280,240,320Q160,360,80,320Q0,280,0,200Q0,120,80,80Q160,40,240,80Q320,120,320,200Z;
+						  M320,200Q320,120,240,80Q160,40,80,80Q0,120,0,200Q0,280,80,320Q160,360,240,320Q320,280,320,200Z;
+						  M320,200Q320,280,240,320Q160,360,80,320Q0,280,0,200Q0,120,80,80Q160,40,240,80Q320,120,320,200Z" />
+			  </path>
+			</svg>
+			<svg class="hero-blob hero-blob2" viewBox="0 0 400 400" width="300" height="300" fill="none" xmlns="http://www.w3.org/2000/svg">
+			  <defs>
+				<linearGradient id="blobGradient2" x1="0" y1="0" x2="1" y2="1">
+				  <stop offset="0%" stop-color="#A259F7" />
+				  <stop offset="100%" stop-color="#4F8CFF" />
+				</linearGradient>
+			  </defs>
+			  <path fill="url(#blobGradient2)" opacity="0.5">
+				<animate attributeName="d" dur="10s" repeatCount="indefinite"
+				  values="M320,200Q320,280,240,320Q160,360,80,320Q0,280,0,200Q0,120,80,80Q160,40,240,80Q320,120,320,200Z;
+						  M320,200Q320,120,240,80Q160,40,80,80Q0,120,0,200Q0,280,80,320Q160,360,240,320Q320,280,320,200Z;
+						  M320,200Q320,280,240,320Q160,360,80,320Q0,280,0,200Q0,120,80,80Q160,40,240,80Q320,120,320,200Z" />
+			  </path>
+			</svg>
 			<div>
-				<div id="hero-title" class="hero-text">Hi, I'm Albin</div>
-				<div id="hero-p" class="hero-text">Welcome to my website! (major WIP)</div>
+				<div id="hero-title" class="hero-text">Hi, I'm Albin</div>	
+				<div id="hero-subtitle" class="hero-text">Welcome to my website! (major WIP)</div>
+				<div id="hero-p" class="hero-text">I'm a Swedish 17 year old who codes on my freetime. Most of it being mods to DCS World.</div>
 				<div class="hero-buttons-row">
 					<div class="hero-buttons-row" style="width: 50%;">
 						<a href="about-me" style="text-decoration: none;"><div class="hero-button transition-all">-> About me</div></a>
 					</div>
 					<div class="hero-buttons-row" style="width: 50%;">
-						<a href="my-projects" style="text-decoration: none;"><div class="hero-button transition-all">-> My projects</div></a>
+						<a href="my-projects" style="text-decoration: none; white-space: nowrap;"><div class="hero-button transition-all">-> My projects</div></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="seperator"></div>
-		<footer class="flex">
+		<footer class="footer-slim flex">
 			<div id="footer-left">
-				2025 Albin   (no copyright :/ )
+				© 2025 Albin
+			</div>
+			<div id="footer-center">
+				<a href="mailto:your@email.com" class="footer-link" title="Email"><span>📧</span></a>
+				<a href="https://github.com/mrbenevolentcanard" class="footer-link" target="_blank" title="GitHub"><span>🐙</span></a>
 			</div>
 			<div id="footer-right" class="flex">
 				<a href="about-me" class="footer-link header-links transition-all">About me</a>

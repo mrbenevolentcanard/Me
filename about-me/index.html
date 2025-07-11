@@ -40,6 +40,14 @@
 				<div id="hero-p" class="hero-text">A "short" summary about me</div>
 			</div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+				<script>
+					fetch("https://raw.githubusercontent.com/mrbenevolentcanard/mrbenevolentcanard/main/README.md")
+						.then(response => response.text())
+						.then(text => {
+							document.getElementById("hero-p").innerHTML = marked.parse(text);
+						});
+				</script>
 		<div id="seperator"></div>
 		<main>
 			<div id="main-title">About</div>
